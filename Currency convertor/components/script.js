@@ -2,6 +2,7 @@ let select = document.querySelectorAll('.curreny')
 getButton = document.querySelector('form button')
 let btn = document.getElementById('btn')
 let input = document.getElementById('input')
+
 fetch('https://api.frankfurter.app/currencies')
 .then(res=>res.json())
 .then(res=>displayDropDown(res))
